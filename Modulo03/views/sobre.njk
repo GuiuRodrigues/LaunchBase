@@ -5,21 +5,15 @@
     {%block content%}
 
         <div id="wrapper">
-            <img src="https://pbs.twimg.com/profile_images/1291682473592659968/sEorc6oh.jpg" alt="Rocketseat">
-            <h1><a href="https://rocketseat.com.br/" target="_blank">Rocketseat</a> </h1>
-            <p>Nossas atividades começaram em 2010</p>
-            <h2>Principais Cursos Ofertados</h2>
+            <img src="{{sobre.image_logo}}" alt="logo da {{sobre.name}}">
+            <h1><a href="{{sobre.link_name}}" target="_blank">{{sobre.name}}</a> </h1>
+            <p>{{sobre.incio}}</p>
+            <h2>{{sobre.description}}</h2>
             <ul>
-                <li>Starter - Totalmente Gratuito</li>
-                <li>Lauch Base - Pago</li>
-                <li>Go Stack - Pago</li>
+                {%for cursos in sobre.cursos%}
+                <li>{{cursos.name}}</li>
+                {%endfor%}
             </ul>
-        </div>
-        <div id="links-footer" class="links">
-            <a href="https://github.com/Rocketseat/" target="_blank">Github</a>
-            <a href="https://www.linkedin.com/school/rocketseat/" target="_blank">Linkedin</a>
-            <a href="instagram.com/rocketseat_oficial/" target="_blank">Instagram</a>
-
         </div>
     {%endblock%}
 

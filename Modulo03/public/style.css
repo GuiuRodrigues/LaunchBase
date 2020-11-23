@@ -83,6 +83,12 @@ a:hover {
     transition: 200ms;
 }
 
+#error img {
+    position: absolute;
+    left: 39%;
+    top: 20%
+}
+
 
 /*===CARDS===*/
 
@@ -98,6 +104,7 @@ a:hover {
 
 .card {
     background-color: #9370DB;
+    display: grid;
 }
 
 .card p {
@@ -113,8 +120,7 @@ a:hover {
     width: 100%;
 }
 
-.card_content,
-.car_info {
+.card_content {
     text-align: center;
     padding: 24px;
 }
@@ -122,6 +128,7 @@ a:hover {
 .card_info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .card_content {
