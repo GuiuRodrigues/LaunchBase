@@ -2,7 +2,7 @@ const express = require('express')
 const nunjucks = require('nunjucks')
 
 const server = express()
-const content = require('./data')
+const cards = require('./data')
 
 server.use(express.static('public'))
 
@@ -52,8 +52,22 @@ server.get('/sobre', function(req, res) {
     return res.render("sobre", { sobre })
 })
 
+server.get("/card", function(req, res) {
+    const id = req.query.id
+    const card = cards.find(function(card) {
+        if (card.id == id) {
+            return true
+        }
+
+    })
+    if (!card) {
+        return res.send("Card not found!!")
+    }
+    return res.render("card", { item: card })
+})
+
 server.get('/conteudos', function(req, res) {
-    return res.render("conteudos", { items: content })
+    return res.render("conteudos", { items: cards })
 })
 
 server.use(function(req, res) {

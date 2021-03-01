@@ -19,7 +19,9 @@ module.exports = [{
         image: "https://blog.rocketseat.com.br/content/images/2020/10/dark-mode-com-css-mudando-a-aparencia-do-blog-de-maneira-simples-e-rapida.jpg",
         autor: "por Thiago Marinho",
         tempo: "3 min de leitura",
-        id: "dark-mode-com-css-mudando-a-aparencia-do-blog-de-maneira-simples-e-rapida/"
+        id: "dark-mode-com-css-mudando-a-aparencia-do-blog-de-maneira-simples-e-rapida/",
+        featured: true
+
 
     },
 

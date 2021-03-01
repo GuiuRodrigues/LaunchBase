@@ -100,6 +100,7 @@ a:hover {
     gap: 20px;
     text-align: center;
     padding: 20px;
+    cursor: pointer;
 }
 
 .card {
@@ -141,6 +142,23 @@ a:hover {
     border-radius: 20px 0px 20px 0px;
     padding: 5px 20px;
     text-align: center;
+}
+
+
+/*===featured===*/
+
+.featured-wrapper.card_image-container {
+    position: relative;
+}
+
+.featured {
+    padding: 2px 8px;
+    right: 5px;
+    top: -6px;
+    position: absolute;
+    border-radius: 10px 10px;
+    background-color: #f7d85f;
+    color: #111;
 }
 
 
@@ -200,4 +218,24 @@ iframe {
     top: 5vh;
     position: absolute;
     right: 0%;
+}
+
+
+/*===CardPage===*/
+
+.post {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.card_post-container {
+    position: relative;
+    padding-top: 62.5%;
+}
+
+.card_post-container iframe {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
 }
